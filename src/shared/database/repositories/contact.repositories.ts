@@ -11,8 +11,8 @@ export class ContactRepository {
     return this.prismaService.contact.create(createDto);
   }
 
-  findUnique(findUniqueDto: Prisma.ContactFindUniqueArgs) {
-    return this.prismaService.contact.findUnique(findUniqueDto);
+  findFirst() {
+    return this.prismaService.contact.findFirst();
   }
 
   update(updateDto: Prisma.ContactUpdateArgs) {
